@@ -1,4 +1,5 @@
 tailwind.config = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -13,4 +14,5 @@ tailwind.config = {
       },
     },
   },
+  plugins: [],
 };
