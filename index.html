@@ -50,10 +50,11 @@
         <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
           <div
             class="flex items-center justify-between flex-col sm:flex-row max-sm:gap-4">
-            <button
+            <a
+              href="./home.html"
               class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
               Blog
-            </button>
+            </a>
 
             <!-- # Logo -->
             <a href="#" class="flex gap-2 items-center">
@@ -72,7 +73,9 @@
                 src="./assets/coin.png"
                 alt="coin"
                 class="w-6 object-cover" />
-              <p class="text-dark-secondary text-xl"><span>5500</span> BDT</p>
+              <p class="text-dark-secondary text-xl">
+                <span id="main_account">5500</span> BDT
+              </p>
             </div>
           </div>
         </div>
@@ -111,23 +114,27 @@
                 <div
                   class="border text-dark-secondary text-lg py-2 px-4 rounded-md font-semibold flex items-center gap-2 bg-stone-200/40 w-fit">
                   <img src="./assets/coin.png" alt="coin" class="w-5 h-5" />
-                  <p class="text-sm">0 BDT</p>
+                  <p class="text-sm"><span id="donate_amount">0</span> BDT</p>
                 </div>
-                <h2 class="card-title">
+                <h2 class="card_title text-xl font-bold" id="donate_title">
                   Donate for Flood at Noakhali, Bangladesh
                 </h2>
                 <p>
                   The recent floods in Noakhali have caused significant damage
-                  to homes and infrastructure. Your donation will help provide
-                  essential supplies to those affected. Every contribution, big
-                  or small, makes a difference.
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
                 </p>
                 <div class="card-actions justify-end">
                   <input
+                    id="donate_input"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full font-light" />
                   <button
+                    id="donate_btn"
                     class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold w-full">
                     Donate Now
                   </button>
@@ -144,22 +151,29 @@
                 <div
                   class="border text-dark-secondary text-lg py-2 px-4 rounded-md font-semibold flex items-center gap-2 bg-stone-200/40 w-fit">
                   <img src="./assets/coin.png" alt="coin" class="w-5 h-5" />
-                  <p class="text-sm">600 BDT</p>
+                  <p class="text-sm"><span id="donate_amount">600</span> BDT</p>
                 </div>
-                <h2 class="card-title">
+                <h2 class="card_title text-xl font-bold" id="donate_title">
                   Donate for Flood Relief in Feni, Bangladesh
                 </h2>
                 <p>
-                  Your generous donation will help provide immediate aid to
-                  those affected by the floods in Feni, including food, clean
-                  water, and medical supplies.
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
                 </p>
                 <div class="card-actions justify-end">
                   <input
+                    id="donate_input"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full font-light" />
                   <button
+                    id="donate_btn"
                     class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold w-full">
                     Donate Now
                   </button>
@@ -178,21 +192,32 @@
                 <div
                   class="border text-dark-secondary text-lg py-2 px-4 rounded-md font-semibold flex items-center gap-2 bg-stone-200/40 w-fit">
                   <img src="./assets/coin.png" alt="coin" class="w-5 h-5" />
-                  <p class="text-sm">2400 BDT</p>
+                  <p class="text-sm">
+                    <span id="donate_amount">2400</span> BDT
+                  </p>
                 </div>
-                <h2 class="card-title">
+                <h2 class="card_title text-xl font-bold" id="donate_title">
                   Aid for Injured in the Quota Movement
                 </h2>
                 <p>
-                  Your support is crucial in providing medical assistance and
-                  rehabilitation to those affected by the Quota movement.
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
                 </p>
                 <div class="card-actions justify-end">
                   <input
+                    id="donate_input"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full font-light" />
                   <button
+                    id="donate_btn"
                     class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold w-full">
                     Donate Now
                   </button>
@@ -203,16 +228,16 @@
 
           <!-- History -->
           <div id="history_tab" class="hidden flex-col gap-8">
-            <div class="card border p-8">
+            <!-- <div class="card border p-8">
               <div class="card-body">
-                <h2 class="card-title">
+                <h2 class="card_title">
                   96500 Taka Donated for Famine-2024 at Feni, Bangladesh
                 </h2>
                 <p class="font-light text-dark-secondary">
                   If a dog chews shoes whose shoes does he choose?
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -221,14 +246,16 @@
       <section>
         <dialog id="my_modal_1" class="modal">
           <div class="modal-box text-center">
-            <h3 class="text-lg font-bold">Congrats!</h3>
-            <img src="./assets/coin.png" alt="coin" class="w-10 mt-5" />
+            <h3 class="text-4xl font-bold">Congrats!</h3>
+            <div class="flex justify-center items-center">
+              <img src="./assets/coin.png" alt="coin" class="w-10 mt-5" />
+            </div>
             <p class="py-4 text-dark-secondary">
-              You have donated for humankind
+              You Have Donated For Humankind
             </p>
             <h3 class="text-lg font-bold">Successfully</h3>
             <div class="modal-action justify-center">
-              <button class="btn" id="close-btn">Close Confirmation</button>
+              <button class="btn" id="close-btn">close confirmation</button>
             </div>
           </div>
         </dialog>
