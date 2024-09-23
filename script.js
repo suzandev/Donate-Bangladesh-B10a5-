@@ -60,8 +60,6 @@ for (let i = 0; i < donateNowBtn.length; i++) {
               </div>
           </div>`;
 
-      console.log(historyCard);
-
       historyTab.innerHTML += historyCard;
 
       // function for modal
@@ -71,8 +69,6 @@ for (let i = 0; i < donateNowBtn.length; i++) {
       });
 
       donateInput[i].value = "";
-
-      console.log(`Donate Button Clicked. Amount: ${donateAmount}`);
     }
   });
 }
